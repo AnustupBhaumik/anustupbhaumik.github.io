@@ -1,10 +1,15 @@
-title: Portfolio
-description: Research & Projects
+title: Anustup Bhaumik
+description: M.Sc. CS student at RKMVERI
 remote_theme: pages-themes/midnight@v0.2.0
 
 # Sidebar Quick Links
-linkedin_username: anustup-bhaumik
 github_username: AnustupBhaumik
 
-# Minimal configuration for blogging
+# Navigation Links across separate pages
+header_pages:
+  - index.md
+  - projects.md
+  - blog.md
+  - contact.md
+
 permalink: /blog/:title/
