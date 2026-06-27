@@ -1,6 +1,6 @@
 title: Anustup Bhaumik
 description: A curious learner
-remote_theme: pages-themes/midnight@v0.2.0
+theme: jekyll-theme-midnight
 
 # Sidebar Quick Links
 github_username: AnustupBhaumik
