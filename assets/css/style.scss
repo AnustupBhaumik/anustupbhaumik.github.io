@@ -55,3 +55,24 @@ a {
   margin-right: 1rem;
   font-weight: 600;
 }
+
+@media charset, screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  nav a {
+    margin-right: 0 !important; /* Clears desktop spacing */
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
