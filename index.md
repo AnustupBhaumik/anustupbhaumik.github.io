@@ -3,6 +3,13 @@ layout: default
 title: Home
 ---
 
+<nav style="margin-bottom: 2rem; border-bottom: 1px solid #2d2d34; padding-bottom: 1rem;">
+  <a href="/" style="margin-right: 1.5rem; font-weight: bold;">Home</a>
+  <a href="/projects" style="margin-right: 1.5rem; font-weight: bold;">Projects</a>
+  <a href="/blog" style="margin-right: 1.5rem; font-weight: bold;">Blog</a>
+  <a href="/contact" style="font-weight: bold;">Contact</a>
+</nav>
+
 <div style="text-align: center; padding: 1.5rem 0;">
   <img src="website_profile.jpeg" alt="Profile Photo" class="profile-img">
   <h1>Hello World!</h1>
