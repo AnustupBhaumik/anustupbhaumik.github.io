@@ -11,7 +11,7 @@ title: Home
   </p>
   <div class="social-links" style="margin-top: 1.5rem;">
     <a href="https://github.com/AnustupBhaumik" target="_blank">🐙 GitHub</a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+    <a href="https://linkedin.com/in/anustup-bhaumik" target="_blank">💼 LinkedIn</a>
   </div>
 </div>
 
