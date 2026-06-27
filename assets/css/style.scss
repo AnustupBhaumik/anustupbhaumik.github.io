@@ -77,8 +77,16 @@ a {
   }
 }
 
-
-/* Hide the top-left View On GitHub button */
-#downloads {
+/* Force hide the View on GitHub button and its containers */
+.downloads, 
+#downloads, 
+a.button, 
+ul.downloads,
+header ul {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
