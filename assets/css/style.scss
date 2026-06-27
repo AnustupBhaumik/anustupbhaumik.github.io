@@ -76,3 +76,9 @@ a {
     height: 120px;
   }
 }
+
+
+/* Hide the top-left View On GitHub button */
+#downloads {
+  display: none !important;
+}
