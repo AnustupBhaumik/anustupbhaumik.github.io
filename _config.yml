@@ -1,1 +1,10 @@
-theme: jekyll-theme-midnight
+title: Portfolio
+description: Research & Projects
+remote_theme: pages-themes/midnight@v0.2.0
+
+# Sidebar Quick Links
+linkedin_username: anustup-bhaumik
+github_username: AnustupBhaumik
+
+# Minimal configuration for blogging
+permalink: /blog/:title/
