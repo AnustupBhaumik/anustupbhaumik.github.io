@@ -5,7 +5,7 @@ title: Home
 
 <div style="text-align: center; padding: 1.5rem 0;">
   <img src="website_profile.jpeg" alt="Profile Photo" class="profile-img">
-  <h1>Welcome to my Space</h1>
+  <h1>Hello World!</h1>
   <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: #a0aec0;">
     I am a M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) and an aspiring PhD candidate specializing in Theoretical Computer Science.
   </p>
