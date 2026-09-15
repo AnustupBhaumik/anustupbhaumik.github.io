@@ -1,101 +1,90 @@
 ---
 ---
 :root {
-  --bg-color: #0d1117;
-  --text-main: #c9d1d9;
-  --text-bright: #ffffff;
-  --accent: #58a6ff;
+  --bg: #0d1117;
+  --surface: #161b22;
+  --text: #c9d1d9;
+  --heading: #ffffff;
+  --primary: #58a6ff;
   --border: #30363d;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-main);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
   margin: 0;
 }
 
 .container {
-  max-width: 750px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-/* Override your inline nav styles */
-nav {
-  display: flex !important;
-  justify-content: center !important;
-  gap: 2rem !important;
-  border-bottom: 1px solid var(--border) !important;
-  padding-bottom: 1.5rem !important;
-  margin-bottom: 3rem !important;
-}
-
-nav a {
-  color: var(--text-main) !important;
-  margin: 0 !important; /* Kills your inline margin */
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-nav a:hover {
-  color: var(--accent) !important;
-}
-
-/* Typography & Content */
-h1 {
-  color: var(--text-bright);
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h3 {
-  color: var(--text-bright);
-  margin-top: 2.5rem;
+header {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
 }
 
-p {
-  color: #8b949e !important; /* Overrides inline gray */
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: var(--heading);
+  font-weight: 600;
+  margin-top: 2rem;
 }
 
 a {
-  color: var(--accent);
+  color: var(--primary);
   text-decoration: none;
-}
-
-/* Image & Socials */
-.profile-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--border);
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.profile-img:hover {
-  transform: scale(1.05);
-  border-color: var(--accent);
-}
-
-.social-links a {
-  margin: 0 0.75rem;
-  font-size: 1.1rem;
   transition: opacity 0.2s;
 }
 
-.social-links a:hover {
+a:hover {
   opacity: 0.8;
 }
 
-/* Horizontal Rule for the --- in markdown */
-hr {
-  border: 0;
-  height: 1px;
-  background: var(--border);
-  margin: 3rem 0;
+nav a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--heading);
+}
+
+.project-card, .blog-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover, .blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
