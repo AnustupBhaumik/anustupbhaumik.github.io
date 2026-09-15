@@ -14,7 +14,7 @@ title: Home
   <img src="website_profile.jpeg" alt="Profile Photo" class="profile-img">
   <h1>Hello World!</h1>
   <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: #a0aec0;">
-    I am a M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) and an aspiring PhD candidate specializing in Theoretical Computer Science.
+    I am a M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) and my interest lie on the intersection of Theoretical CS and Machine Learning. I am also working on some cool projects. These projects span across different areas like GenAI, Deep Learning, Reinforcement Learning etc.
   </p>
   <div class="social-links" style="margin-top: 1.5rem;">
     <a href="https://github.com/AnustupBhaumik" target="_blank">🐙 GitHub</a>
