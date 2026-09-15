@@ -11,6 +11,11 @@ title: Projects
 </nav>
 
 # 🛠️ Projects and Publications
+<div class="project-card">
+  <h3>📁 Natural Language to SQL</h3>
+  <p>Description coming soon</p>
+  <a href="https://github.com/AnustupBhaumik/Natural_Language_to_SQL" target="_blank">View Repository →</a>
+</div>
 
 <div class="project-card">
   <h3>📁 Deep Learning based Network Intrusion Detection System</h3>
