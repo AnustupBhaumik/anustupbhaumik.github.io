@@ -1,143 +1,101 @@
 ---
 ---
 :root {
-  --bg-color: #050505;
-  --surface: rgba(20, 20, 22, 0.7);
-  --text-main: #a1a1aa;
+  --bg-color: #0d1117;
+  --text-main: #c9d1d9;
   --text-bright: #ffffff;
-  --gradient-1: linear-gradient(135deg, #FF0080, #7928CA); /* Pink to Purple */
-  --gradient-2: linear-gradient(135deg, #00DFD8, #007CF0); /* Cyan to Blue */
-  --border-color: rgba(255, 255, 255, 0.1);
+  --accent: #58a6ff;
+  --border: #30363d;
 }
 
 body {
   background-color: var(--bg-color);
-  /* Subtle ambient glowing background */
-  background-image: radial-gradient(circle at 15% 50%, rgba(121, 40, 202, 0.08), transparent 25%),
-                    radial-gradient(circle at 85% 30%, rgba(0, 223, 216, 0.08), transparent 25%);
   color: var(--text-main);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.7;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
   margin: 0;
-  min-height: 100vh;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-/* Gradient Text for Headings */
-h1, h2, h3 {
-  color: var(--text-bright);
-  font-weight: 800;
-  letter-spacing: -0.05em;
-}
-
-h1 {
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-/* Interactive Navigation */
-header {
-  padding: 2rem 0;
-  margin-bottom: 3rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
+/* Override your inline nav styles */
 nav {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+  display: flex !important;
+  justify-content: center !important;
+  gap: 2rem !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 1.5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 nav a {
-  color: var(--text-main);
-  font-weight: 600;
+  color: var(--text-main) !important;
+  margin: 0 !important; /* Kills your inline margin */
   text-decoration: none;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* Animated Nav Underline */
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background: var(--gradient-2);
-  transition: width 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: var(--text-bright);
+  color: var(--accent) !important;
 }
 
-nav a:hover::after {
-  width: 100%;
+/* Typography & Content */
+h1 {
+  color: var(--text-bright);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--text-bright);
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+p {
+  color: #8b949e !important; /* Overrides inline gray */
 }
 
 a {
-  color: #00DFD8;
+  color: var(--accent);
   text-decoration: none;
 }
 
-/* Interactive Glassmorphism Cards */
-.project-card, .blog-card {
-  background: var(--surface);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  position: relative;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-/* Glowing Border Reveal on Hover */
-.project-card::before, .blog-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  padding: 2px;
-  background: var(--gradient-2);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-.project-card:hover, .blog-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 30px -10px rgba(0, 223, 216, 0.2);
-}
-
-.project-card:hover::before, .blog-card:hover::before {
-  opacity: 1;
-}
-
-/* Interactive Profile Image */
+/* Image & Socials */
 .profile-img {
-  border-radius: 50%;
   width: 140px;
   height: 140px;
+  border-radius: 50%;
   object-fit: cover;
-  padding: 4px;
-  background: var(--gradient-1); /* Gradient ring */
-  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.5s ease;
+  border: 3px solid var(--border);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .profile-img:hover {
-  transform: rotate(5deg) scale(1.08);
-  filter: brightness(1.2);
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
+.social-links a {
+  margin: 0 0.75rem;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+.social-links a:hover {
+  opacity: 0.8;
+}
+
+/* Horizontal Rule for the --- in markdown */
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--border);
+  margin: 3rem 0;
 }
