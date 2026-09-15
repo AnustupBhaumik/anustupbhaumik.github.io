@@ -1,6 +1,6 @@
 title: Anustup Bhaumik
 description: A curious learner
-theme: jekyll-theme-midnight
+# theme: jekyll-theme-midnight
 
 # Sidebar Quick Links
 #github_username: AnustupBhaumik
@@ -15,3 +15,10 @@ header_pages:
   - contact.md
 
 permalink: /blog/:title/
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
