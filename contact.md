@@ -15,6 +15,6 @@ title: Contact
 
 If you want to collaborate on theoretical CS research, discuss graph problems, or just connect, feel free to reach out!
 
-* **Email:** bhaumikanustup268@gmail.com
+* **Email:** abhaumik03@gmail.com
+* **LinkedIn:** <a href="https://linkedin.com/in/anustup-bhaumik">Anustup Bhaumik</a>
 * **Institution:** RKMVERI, Belur Math
-* **Current Residency:** NISER, Bhubaneswar (Summer Research Intern 2026)

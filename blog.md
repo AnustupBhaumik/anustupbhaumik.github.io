@@ -13,7 +13,7 @@ title: Blog
 
 # ✍️ Blogs on some cool stuff
 
-Here you can find my latest write-ups regarding algorithms and theoretical computer science.
+Here you can find my latest write-ups regarding algorithms, theoretical computer science and Artificial Intelligence.
 
 <ul style="list-style-type: none; padding-left: 0;">
   {% for post in site.posts %}

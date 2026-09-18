@@ -19,13 +19,14 @@ title: Home
   <div class="social-links" style="margin-top: 1.5rem;">
     <a href="https://github.com/AnustupBhaumik" target="_blank">🐙 GitHub</a>
     <a href="https://linkedin.com/in/anustup-bhaumik" target="_blank">💼 LinkedIn</a>
+    <a href="https://github.com/AnustupBhaumik/resume_maintain/blob/main/placement_resume.pdf" target="_blank">📄 Circum Vitae</a>
   </div>
 </div>
 
 ---
 
 ### 🔍 Research Interests
-My core research focus lies in structural and algorithmic aspects of computer science:
+My core research interest lies on algorithms and foundations of computer science, with an additional interest in Artificial Intelligence:
 * **Graph Theory:** Efficient algorithms, structural graph theory, and network analysis.
 * **Paramterized Algorithms:** Designing FPT algorithms, Kernelization, FPT reductions.
-* **Computational Geometry:** Geometric algorithms and relaxations of NP-hard geometric problems.
+* **Artificial Intelligence:** Developing robust and scalable ML and DL methods, with a focus on applying them to real-world problems and exploring their algorithmic foundations.

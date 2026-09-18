@@ -1,0 +1,142 @@
+---
+---
+:root {
+  --bg: #191919;
+  --text: #ffffff;
+  --text-muted: #9b9a97;
+  --border: #2f2f2f;
+  --hover-bg: rgba(255, 255, 255, 0.055);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 708px;
+  margin: 0 auto;
+  padding: 8vh 20px 12vh;
+}
+
+/* Notion-style Navigation */
+nav {
+  display: flex !important;
+  gap: 0.5rem !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+nav a {
+  color: var(--text-muted) !important;
+  margin: 0 !important;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500 !important;
+  transition: background 0.1s ease-in;
+}
+
+nav a:hover {
+  background: var(--hover-bg);
+  color: var(--text) !important;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5rem; }
+h3 { font-size: 1.25rem; border-bottom: none; }
+
+p {
+  color: var(--text) !important;
+  margin-bottom: 1.2em;
+}
+
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: rgba(55, 53, 47, 0.3);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: var(--text);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 4px; /* Slight rounding, classic Notion */
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+/* Subtle Social Buttons */
+.social-links a {
+  display: inline-flex;
+  padding: 6px 12px;
+  margin: 0 4px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--text) !important;
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 1px 2px;
+  transition: background 0.1s ease-in;
+}
+
+.social-links a:hover {
+  background: var(--hover-bg);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+
+/* --- Custom Cursor & Magnetic Elements --- */
+nav a, .social-links a {
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1), background 0.2s ease;
+  display: inline-block; /* Required for transform to work */
+}
+
+/* --- Typewriter Cursor --- */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: var(--text);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+/* --- Blur Reveals (Apple Style) --- */
+.blur-reveal {
+  opacity: 0;
+  filter: blur(8px);
+  transform: translateY(12px);
+  transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.blur-reveal.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
