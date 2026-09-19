@@ -11,7 +11,7 @@ title: Home
 </nav>
 
 <div style="text-align: center; padding: 1.5rem 0;">
-  <img src="website_profile.jpeg" alt="Profile Photo" class="profile-img">
+  <img src="website_profile_pic.jpeg" alt="Profile Photo" class="profile-img">
   <h1>Hello World!</h1>
   <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: #a0aec0;">
     I am a M.Sc. Computer Science student at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) and my interest lie on the intersection of Theoretical CS and Machine Learning. I am also working on some cool projects. These projects span across different areas like GenAI, Deep Learning, Reinforcement Learning etc.
@@ -22,6 +22,39 @@ title: Home
     <a href="https://github.com/AnustupBhaumik/resume_maintain/blob/main/placement_resume.pdf" target="_blank">📄 Circum Vitae</a>
   </div>
 </div>
+
+---
+
+### 🎓 Education
+
+**M.Sc. in Computer Science**  
+Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)  
+2025 – Present
+
+**B.Sc. (Honours) in Computer Science**  
+University of Kalyani  
+2022 – 2025
+
+---
+
+### 🛠️ Skills
+* **Languages:** Python, C++, JavaScript
+* **Frameworks & Libraries:** NumPy, Scikit-Learn, Pytorch, LangChain, MatplotLib
+* **Databases:** PostgreSQL, neo4j
+* **Tools:** Git, LATEX, MS-Office
+
+
+---
+
+### 💼 Experience
+
+**Summer Research Intern**  
+National Institute of Science Education and Research (NISER)  
+May 2026 – Present
+
+- Worked on research problems in theoretical computer science and graph algorithms.
+- Explored parameterized algorithms and structural properties of graphs.
+- Worked under the guidance of Dr. Aritra Banik and Dr. Abhishek Sahu.
 
 ---
 

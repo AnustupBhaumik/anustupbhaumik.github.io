@@ -8,6 +8,7 @@
   --hover-bg: rgba(255, 255, 255, 0.055);
 }
 
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -18,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 708px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 8vh 20px 12vh;
 }
@@ -77,9 +78,9 @@ a:hover {
 
 /* Profile Image */
 .profile-img {
-  width: 96px;
-  height: 96px;
-  border-radius: 4px; /* Slight rounding, classic Notion */
+  width: 200px;
+  height: 200px;
+  border-radius: 100px; /* Slight rounding, classic Notion */
   object-fit: cover;
   margin-bottom: 1.5rem;
 }

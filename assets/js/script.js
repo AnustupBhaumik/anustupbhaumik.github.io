@@ -2,45 +2,7 @@
    PORTFOLIO SCRIPTS - ADVANCED
    ========================================= */
 
-/* 1. TYPEWRITER (THEORETICAL FOCUS) */
-const textElement = document.getElementById("dynamic-text");
-const name = "Anustup Bhaumik";
-const traits = [
-    "an aspiring AI researcher",
-    "a curious learner",
-    "a problem solver"
-];
 
-let traitIndex = 0, charIndex = 0;
-let isDeleting = false, isNamePhase = true;
-
-function typeEffect() {
-    if (!textElement) return;
-    const currentString = isNamePhase ? name : traits[traitIndex];
-    let typeSpeed = isDeleting ? 40 : 80;
-
-    if (!isDeleting) {
-        textElement.textContent = currentString.substring(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentString.length) {
-            typeSpeed = isNamePhase ? 2500 : 1800;
-            isDeleting = true;
-        }
-    } else {
-        textElement.textContent = currentString.substring(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-            isDeleting = false;
-            typeSpeed = 400;
-            if (isNamePhase) isNamePhase = false;
-            else traitIndex = (traitIndex + 1) % traits.length;
-        }
-    }
-    setTimeout(typeEffect, typeSpeed);
-}
-
-/* 2. COMPUTATIONAL GEOMETRY BACKGROUND (DELAUNAY-INSPIRED)
-   Creates a subtle, slow-moving geometric mesh that reacts to the cursor. */
 function initGeometricMesh() {
     const canvas = document.getElementById('bg-canvas');
     if (!canvas) return;
@@ -66,7 +28,7 @@ function initGeometricMesh() {
 
     function draw() {
         ctx.clearRect(0, 0, W, H);
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+        ctx.strokeStyle = 'rgba(5, 100, 48, 0.31)';
         ctx.lineWidth = 1;
 
         nodes.forEach(node => {
@@ -101,8 +63,7 @@ function initGeometricMesh() {
     draw();
 }
 
-/* 3. MAGNETIC UI ELEMENTS (Framer/Apple Style)
-   Makes navigation and social links "pull" towards the cursor on hover. */
+/* 3. MAGNETIC UI ELEMENTS */
 function initMagneticLinks() {
     const magneticElements = document.querySelectorAll('nav a, .social-links a');
     
@@ -123,8 +84,7 @@ function initMagneticLinks() {
     });
 }
 
-/* 4. BLUR REVEAL ON SCROLL
-   Instead of just sliding up, elements unblur as they appear. */
+/*  BLUR REVEAL ON SCROLL */
 function initBlurReveals() {
     const elements = document.querySelectorAll('h1, h2, h3, p, hr, .profile-img, .project-card');
     elements.forEach(el => el.classList.add('blur-reveal'));
@@ -142,7 +102,6 @@ function initBlurReveals() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    typeEffect();
     initGeometricMesh();
     initMagneticLinks();
     initBlurReveals();
